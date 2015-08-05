@@ -25,3 +25,10 @@ section img {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+    position: absolute;
+    padding: 0 10px;
+    right: 0;
+    bottom: 0;
+}
