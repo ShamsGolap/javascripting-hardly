@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 480px;
+    background-color: wheat;
+    color: dimgrey;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 50px;
+}
+
+section {
+    border: 1px solid dimgrey;
+    padding: 10px;
+}
+
+section h3 {
+    text-shadow: 2px 2px 2px lightgrey;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
