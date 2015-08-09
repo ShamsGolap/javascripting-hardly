@@ -6,19 +6,21 @@
     'use strict';
 
     var // HTML Elements
+        currentLocation = win.location.href,
         homeLink = doc.getElementById('nav-home'),
         articlesLink = doc.getElementById('nav-articles'),
-        javascriptLink = doc.getElementById('nav-javascript');
+        javascriptLink = doc.getElementById('nav-javascript'),
 
+        // Regular expressions
+        htmlFilesInUrl = /(\w*)-?\w*.html/g;
 
     (function () {
-        if (win.location.pathname === '/' || win.location.pathname === '/index.html') {
+        if (!currentLocation.match(htmlFilesInUrl) || currentLocation.match(htmlFilesInUrl)[0] === 'index.html') {
             homeLink.className = 'active';
-        } else if (win.location.pathname === '/articles.html') {
+        } else if (currentLocation.match(htmlFilesInUrl)[0] === 'articles.html') {
             articlesLink.className = 'active';
-        } else if (win.location.pathname === '/javascript.html') {
+        } else if (currentLocation.match(htmlFilesInUrl)[0] === 'javascript.html') {
             javascriptLink.className = 'active';
         }
      }());
-
 }(window, document));
