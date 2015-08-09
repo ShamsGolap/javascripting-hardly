@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "title": "Because I've got \"JavaScript, The Definitive Guide\" (from O'Reilly).",
+      "content": "I purchased the Maxi JavaScript book from O'Reilly, for learning more and more JavaScript.",
+      "image": "http://akamaicovers.oreilly.com/images/9780596805531/cat.gif"
+    },
+    {
+      "title": null,
+      "content": null,
+      "image": null
+    },
+    {
+      "title": null,
+      "content": null,
+      "image": null
+    }
+  ]
+}
